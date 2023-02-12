@@ -6,12 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Facebook - Login</title>
 
-
-    <!-- tailwind css cdn -->
-    <script src="https://cdn.tailwindcss.com"></script>
-
     <!-- font awesome cdn -->
     <script src="https://kit.fontawesome.com/3dfa760d15.js" crossorigin="anonymous"></script>
+
+    <!-- tailwind css -->
+    <script src="https://cdn.tailwindcss.com"></script>
 
     <!-- external css link -->
     <link rel="stylesheet" href="style.css">
@@ -23,8 +22,79 @@
     
 
     <!-- main -->
-   <main class="main">
+   <main class="container mx-auto h-screen p-4">
 
+        <div class="grid h-full mx-auto grid-cols-1 lg:grid-cols-2 lg:gap-x-36 lg:justify-center md:items-center">
+
+            <section class="text-center lg:text-left mb-4 lg:w-4/5 lg:mx-auto">
+
+                <div class="">
+                    
+                    <h2 class="text-blue-500 text-3xl md:text-4xl font-bold mb-3 md:mb-5">
+                        facebook
+                    </h2>
+        
+                    <h3 class="font-semibold text-2xl md:text-3xl">
+                        Recent logins
+                    </h3>
+        
+                    <p class="text-gray-600 font-medium text-lg mb-5">
+                        Click your picture or add an account.
+                    </p>
+        
+                </div>
+        
+                <div class="flex justify-around md:justify-center space-x-2 lg:justify-start md:space-x-4">
+        
+                    <div class="shadow-2xl w-40 md:w-44 flex flex-col text-center rounded-xl">
+        
+                        <div class="w-full">
+                            <img class="rounded-t-xl" src="./image/emon.jpg" alt="profile-picture of emon">
+                        </div>
+        
+                        <p class="py-2 text-xl text-gray-700">
+                            Ariyan
+                        </p>
+        
+                    </div>
+        
+                    <div class="shadow-2xl w-40 md:w-44 flex flex-col text-center rounded-xl">
+
+                        <div class="w-full h-5/6 flex justify-center items-center bg-gray-200 rounded-t-xl">
+                            <p class="plus-icon">
+                                <i class="fa-solid fa-plus"></i>
+                            </p>
+                        </div>
+                        <p class="py-2 text-xl text-gray-700">
+                            Add Account
+                        </p>
+                    </div>
+        
+                </div>
+        
+            </section>
+        
+            <section class="md:mt-14 mx-auto md:w-2/3 lg:w-4/5">
+        
+                <div class="shadow-2xl bg-white rounded-lg rounded-t-xl p-3">
+
+                    <input class="block w-full bg-gray-50 px-2 py-3 border border-1 rounded-lg mb-4" type="text" placeholder="Email Address Or Phone Number">
+                    <input class="block w-full bg-gray-50 px-2 py-3 border border-1 rounded-lg mb-4" type="password" placeholder="password">
+                    <button class="block w-full bg-blue-500 text-white py-2 rounded-xl mb-4 text-xl font-semibold">Log in</button>
+
+                    <a class="block text-center text-blue-500 mb-4 " href="">Forgot Password ?</a>
+                    <hr>
+        
+                    <button class="block w-2/3 bg-green-600 text-white mx-auto py-1 md:py-3 my-3 rounded-xl text-xl font-semibold">Create New Account</button>
+                </div>
+        
+                <p class="mt-2 text-center">
+                    <a class="font-bold" href="">Create a Page</a> for a celebrity, brand or business.
+                </p>
+        
+            </section>
+            
+        </div>
 
    </main>
 
